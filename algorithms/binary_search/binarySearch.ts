@@ -8,13 +8,10 @@
 export const binarySearch = (input: number[], target: number): number => {
   let from = 0;
   let until = input.length - 1;
-
-  const setInput = () => from + Math.trunc((until - from) / 2);
-
-  let index = 0;
+  let index = Math.trunc(until / 2);
 
   while (from <= until) {
-    index = setInput();
+    index = from + Math.trunc((until - from) / 2);
 
     if (target === input[index]) return index;
     if (target > input[index]) from = index + 1;
