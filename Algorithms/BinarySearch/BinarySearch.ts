@@ -2,7 +2,7 @@
  * Binary Search Algorithm - Iterative Implementation
  * @param input Sorted array of n integers
  * @param target Target value
- *
+ * @see {@link https://www.techiedelight.com/binary-search/}
  * @returns Index of target
  */
 export const binarySearch = (input: number[], target: number): number => {
@@ -25,7 +25,7 @@ export const binarySearch = (input: number[], target: number): number => {
  * @param target Target value
  * @param from From value
  * @param until Until value
- *
+ * @see {@link https://www.techiedelight.com/binary-search/}
  * @returns Index of target
  */
 export const binarySearchRecursive = (
